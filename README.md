@@ -1,29 +1,36 @@
-# Stock Market Prediction: Apple Inc. (AAPL)
+# Stock Market Prediction: Apple Inc. (AAPL) 📈
 
-This Shiny application predicts stock prices for Apple Inc. (AAPL) using historical data from Yahoo Finance. It calculates moving averages and provides a 10-day forecast of adjusted closing prices.
+Shiny app that predicts Apple (AAPL) stock prices using historical data from Yahoo Finance.
 
-## Features
+## 🚀 What it does
+- Fetches live historical stock data with one click
+- Calculates 50-day and 200-day simple moving averages
+- Forecasts adjusted closing prices for the next 10 days
+- Visualizes price trends and forecasts on interactive charts
 
-- **Fetch Historical Data**: Click the "Fetch Data" button to retrieve the latest stock prices.
-- **Visualizations**: 
-  - Displays the adjusted closing price along with 50-day and 200-day simple moving averages.
-  - Provides a 10-day forecast of adjusted closing prices.
+## ⚙️ How it works
+- Pulls historical AAPL data from Yahoo Finance using quantmod
+- Computes moving averages with TTR
+- Builds a time series forecast model using the forecast package
+- Renders plots and forecasts through a Shiny dashboard
 
-## Requirements
-
-Ensure you have the following R packages installed:
-
-- shiny
+## 🛠️ Tech Stack
+- R
+- Shiny
 - quantmod
 - TTR
 - ggplot2
 - forecast
 
-You can install the required packages by running the following commands in R:
-
+## 📦 Setup
+Install required packages:
 ```r
 if (!requireNamespace("shiny", quietly = TRUE)) install.packages("shiny")
 if (!requireNamespace("quantmod", quietly = TRUE)) install.packages("quantmod")
 if (!requireNamespace("TTR", quietly = TRUE)) install.packages("TTR")
 if (!requireNamespace("ggplot2", quietly = TRUE)) install.packages("ggplot2")
 if (!requireNamespace("forecast", quietly = TRUE)) install.packages("forecast")
+```
+
+## 💡 Use case
+Built to track AAPL price trends and get a short-term forecast without manually plotting moving averages each time.
