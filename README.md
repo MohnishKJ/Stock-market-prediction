@@ -1,4 +1,4 @@
-# Stock Market Prediction: Apple Inc. (AAPL) 📈
+# StockSense: Apple Inc. (AAPL) 📈
 
 Shiny app that predicts Apple (AAPL) stock prices using historical data from Yahoo Finance.
 
